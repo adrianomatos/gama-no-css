@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código CSS</title>
+    <style>
+        div {
+            border: solid red 5px;
+            padding: 5px;
+        }
+
+        .nome-classe {
+            margin: 10px;
+            width: 300px;
+            border: green solid 2px;
+        }
+
+        .nome-mais-interno {
+            border: blue dashed 1px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(0, 255, 0);
+            color: yellow;
+            margin: 15px;
+            width: 200px;
+        }
+
+        .nome-classe-outra {
+            margin: darkgreen dashed 3px;
+            margin-left: 50%;
+            height: 50px;
+            background-color: yellow;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Olá CSS!
+    </div>
+    <div class="nome-classe">
+        Outra div 
+        <div class="nome-mais-interno">
+            interna div interna
+        </div>
+    </div>
+    <div class="nome-classe-outra">
+        Msg 2
+    </div>
+</body>
+
+</html>
