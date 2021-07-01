@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .my-div {
+            height: 25px;
+            background-color: green;
+        }
+
+        /* APLICA ESTILO NO INTERVALE ENTRE 600 E 400 */
+        @media(max-width: 600px) and (min-width: 400px){
+            .my-div {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-div">
+        Trabalhando com tamanhos de tela diferentes
+    </div>
+</body>
+
+</html>

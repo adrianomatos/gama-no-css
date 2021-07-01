@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        .my-div{    /* Classe */
+            color: red;
+        }
+        .my-div::first-letter{ /* selecionando pseudo-elemento */
+            font-size: 30px;
+        }
+
+        #my-input{  /* ID */
+            background-color: dodgerblue;
+        }
+        #my-input:hover{    /* Quando passar o mouse por cima */
+            background-color: green;
+        }
+
+        span[adriano-matos]{ /*  Atributo customizado */
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-div"> 
+        Olá Mundo!
+    </div>
+    <input id="my-input">
+    <span adriano-matos>Gama Academy</span>
+
+</body>
+
+</html>

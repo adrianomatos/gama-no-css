@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu CSS</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS incorporado -->
+    <style>
+        .my-div {
+            background-color: cadetblue;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>MINHAS AULAS</h1>
-    <ul>
+    <!-- CSS inline -->
+    <div style="color: red; text-align: center;" class="my-div">
+        MINHAS AULAS
+    </div>
+    <ul type="circle">
         <li><a href="border_margin_padding.html">Propriedades: border, margin e padding</a></li>
         <li><a href="cores_tipografia.html">Propriedades: cores e tipografia</a></li>
         <li><a href="flexbox.html">Introdução a Flexbox</a></li>
         <li><a href="flexbox_align_justify.html">Flexbox: align e justify</a></li>
-        <li><a href=""></a></li>
+        <li><a href="flexgrow_flexbasis.html">Flex-grow e flex-basis</a></li>
+        <li><a href="flex_shrink.html">Flex-shrink</a></li>
+        <li><a href="seletores.html">Seletores</a></li>
+        <li><a href="media_queries.html">Media Queries</a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
     </ul>
 </body>
+
 </html>
