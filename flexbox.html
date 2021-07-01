@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Flexbox</title>
+    <style>
+        .div-main {
+            display: flex;   /* Org lateral ativado à partir do eixo principal */
+            flex-wrap: wrap; /* Quebra linha quando necessário */
+            
+            /*flex-direction: row; */   /* "PADRÃO" Esquerda p/ direita */
+            flex-direction: row-reverse;/* Direita p/ esquerda */
+            
+            /* flex-direction: column; */ /* Troca eixo principal p/ secundário*/
+            flex-direction: column-reverse;   /* Baixo p/ cima */
+        }
+
+        .div-filha {
+            border: 1px solid black;
+            width: 100px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-main">
+        <div class="div-filha">
+            Olá CSS 1
+        </div>
+        <div class="div-filha">
+            Olá CSS 2
+        </div>
+        <div class="div-filha">
+            Olá CSS 3
+        </div>
+        <div class="div-filha">
+            Olá CSS 1
+        </div>
+        <div class="div-filha">
+            Olá CSS 2
+        </div>
+        <div class="div-filha">
+            Olá CSS 3
+        </div>
+        <div class="div-filha">
+            Olá CSS 1
+        </div>
+        <div class="div-filha">
+            Olá CSS 2
+        </div>
+        <div class="div-filha">
+            Olá CSS 3
+        </div>
+        <div class="div-filha">
+            Olá CSS 1
+        </div>
+        <div class="div-filha">
+            Olá CSS 2
+        </div>
+        <div class="div-filha">
+            Olá CSS 3
+        </div>
+    </div>
+</body>
+
+</html>

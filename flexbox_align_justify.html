@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Flexbox</title>
+    <style>
+        .div-main {
+            width: 500px;
+            height: 500px;
+            border: solid 1px;
+            display: flex;
+
+            /* baseline, center, flex-end */
+            /* align-items: flex-end; */
+
+            /* espaçamento externo igual ENTRE os componentes */
+            /* justify-content: space-between; */
+
+            /* espaçamento dentro do eixo principal em volta dos componentes (componentes centrais ficam "duplicados") */
+            justify-content: space-around;
+        }
+
+        .div-filha1 {
+            border: 1px solid black;
+            width: 100px;
+            height: 60px;
+            font-size: 30px;
+        }
+
+        .div-filha2 {
+            border: 1px solid black;
+            width: 100px;
+            height: 80px;
+            font-size: 30px;
+        }
+
+        .div-filha3 {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-main">
+        <div class="div-filha1">
+            CSS 1
+        </div>
+        <div class="div-filha2">
+            CSS 2
+        </div>
+        <div class="div-filha3">
+            CSS 3
+        </div>
+    </div>
+</body>
+
+</html>
