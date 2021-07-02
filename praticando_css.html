@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando CSS, Flexbox e Media Query</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .produtos{
+            display: flex;
+            width: 100%;    /* scroll até 100% - sem barra lateral */
+            flex-wrap: wrap;
+            justify-content: space-between; /* espaço ENTRE os cars */
+        }
+        .card{
+            display: flex; /*  */
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 20%;
+            font-family: 'Roboto', Courier, monospace;
+            margin: 10px 0; /* 10 no eixo Y e 0 no eixo X */
+        }
+        .descricao{
+            text-align: center;
+            font-size: 12px;
+            margin: 5px 2px; /* 5 no eixo Y e 2 no eixo X */
+        }
+        .preco{
+            font-weight: 600;
+        }
+        .botao-comprar{
+            margin: 5px 0;  /* 5 no eixo Y e 0 no eixo X */
+            padding: 5px; /* 5 em todos */
+            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+        .botao-comprar:hover{   /* HOVER */
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        @media(max-width: 700px){
+            .botao-comprar{
+                width: 100%;
+                border-radius: 0;
+            }
+            .card{
+                flex-basis: 100%;
+            }
+            .descricao{
+                display: none;  /* NÃO MOSTRAR */
+            }
+            img{
+                display: none;  /* NÃO MOSTRAR */
+            }
+        }
+
+        div{
+            border: 1px solid black;
+            width: 200px;
+        }
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="produtos">
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+        <div class="card">
+            <h3>Produto</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <span class="preco">Preço: R$ 987,65</span>
+            <button class="botao-comprar">Adicionar ao carrinho</button>
+        </div>
+    </div>
+</body>
+
+</html>
