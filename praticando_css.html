@@ -10,63 +10,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-        .produtos{
+        .produtos {
+            background-color: dimgrey;
             display: flex;
-            width: 100%;    /* scroll até 100% - sem barra lateral */
+            width: 100%;
+            /* scroll até 100% - sem barra lateral */
             flex-wrap: wrap;
-            justify-content: space-between; /* espaço ENTRE os cars */
+            justify-content: space-between;
+            /* espaço ENTRE os cars */
         }
-        .card{
-            display: flex; /*  */
+
+        .card {
+            display: flex;
+            /*  */
             flex-direction: column;
             align-items: center;
             flex-basis: 20%;
             font-family: 'Roboto', Courier, monospace;
-            margin: 10px 0; /* 10 no eixo Y e 0 no eixo X */
+            margin: 10px 0;
+            /* 10 no eixo Y e 0 no eixo X */
         }
-        .descricao{
+
+        .descricao {
             text-align: center;
             font-size: 12px;
-            margin: 5px 2px; /* 5 no eixo Y e 2 no eixo X */
+            margin: 5px 2px;
+            /* 5 no eixo Y e 2 no eixo X */
         }
-        .preco{
+
+        .oculto {
+            display: none;
+        }
+
+        .preco {
             font-weight: 600;
         }
-        .botao-comprar{
-            margin: 5px 0;  /* 5 no eixo Y e 0 no eixo X */
-            padding: 5px; /* 5 em todos */
+
+        .botao-comprar {
+            margin: 5px 0;
+            /* 5 no eixo Y e 0 no eixo X */
+            padding: 5px;
+            /* 5 em todos */
             border-radius: 10px;
             background-color: #fff;
             border: 1px solid #000;
         }
-        .botao-comprar:hover{   /* HOVER */
+
+        .botao-comprar:hover {
+            /* HOVER */
             cursor: pointer;
             background-color: #000;
             color: #fff;
         }
-        
-        @media(max-width: 700px){
-            .botao-comprar{
+
+        @media(max-width: 700px) {
+            .botao-comprar {
                 width: 100%;
                 border-radius: 0;
             }
-            .card{
+
+            .card {
                 flex-basis: 100%;
             }
-            .descricao{
-                display: none;  /* NÃO MOSTRAR */
+
+            .descricao {
+                display: none;
+                /* NÃO MOSTRAR */
+
             }
-            img{
-                display: none;  /* NÃO MOSTRAR */
+
+            .oculto {
+                display: block; /* Teste */
+            }
+
+            img {
+                /* display: none; */
+                /* NÃO MOSTRAR */
+                height: 200px;
             }
         }
 
-        div{
+        div {
             border: 1px solid black;
             width: 200px;
         }
-        img{
-            width: 100px;
+
+        img {
+            height: 150px;
         }
     </style>
 </head>
@@ -75,64 +105,73 @@
     <div class="produtos">
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Pop110i.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/bIZ_125.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Titan2020.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Bros2019-laranja-frente.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Bros_nxr_160_esdd.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Twister-preta-Lateral.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/XRE300.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Cb_650r_azul_lateral.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
         <div class="card">
             <h3>Produto</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbpOHM7kNSNHI92kJIyzvrz72WaSp8XbWwA1_dzuirVMsvawYqeEQoiYpMsiN0DmD0aU&usqp=CAU" alt="">
+            <img src="imagens/Honda_500X_vermelha.png" alt="">
             <p class="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="oculto"><a href="#">+ Informações</a></p>
             <span class="preco">Preço: R$ 987,65</span>
             <button class="botao-comprar">Adicionar ao carrinho</button>
         </div>
